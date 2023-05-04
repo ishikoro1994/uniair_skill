@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/skill.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/skill.js"></script>
+        <title>ユニエア スキル確認</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="ユニエアのスキル期待値確認用">
+    </head>
+    <body>
+        <h1 id="tool_title">ユニエア スキル確認</h1>
+        <p>
+            <div id="search_condition">
+                <button id="condition_reset" onclick="ConditionResetClick();">条件リセット</button>
+                <p id="interval">
+                    <label id="interval_lbl1">間隔　:</label>
+                    <select id="interval_condition" class="interval" onchange="ChangeSearchCondition();"></select>
+                    <label id="interval_lbl2">秒</label>
+                </p>
+                <p id="probability">
+                    <label id="probability_lbl1">確率　:</label>
+                    <select id="probability_condition" class="probability" onchange="ChangeSearchCondition();"></select>
+                    <label id="probability_lbl2">%</label>
+                </p>
+                <p id="period">
+                    <label id="period_lbl1">期間　:</label>
+                    <select id="period_condition" class="period" onchange="ChangeSearchCondition();"></select>
+                    <label id="period_lbl2">秒間</label>
+                </p>
+                <p id="effect">
+                    <label id="effect_lbl1">効果　:</label>
+                    <input type="text" id="effect_condition" onchange="ChangeSearchCondition();">
+                    <label id="effect_lbl2">(部分一致・スペース区切りで複数条件可)</label>
+                </p>
+                <p id="expected_value">
+                    <label id="expected_value_lbl1">期待値:</label>
+                    <select id="expected_value_condition" class="expected_value" onchange="ChangeSearchCondition();"></select>
+                </p>
+            </div>
+        </p>
+        <table border="1" id="skill_list">
+            <thead style="text-align: center;">
+                <tr>
+                    <th>間隔</th>
+                    <th>確率</th>
+                    <th>期間</th>
+                    <th>効果</th>
+                    <th>期待値</th>
+                </tr>
+            </thead>
+            <tbody id="skill_list_body"></tbody>
+        </table>
+    </body>
+</html>

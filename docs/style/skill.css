@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+#condition_reset {
+  margin-bottom:5px;
+}
+
+#search_condition p {
+  margin-top: 5px;
+  margin-bottom: unset;
+}
+
+/*スキル一覧 ヘッダ*/
+#skill_list thead {
+  background-color: rgb(205, 253, 205);
+}
+
+/*間隔*/
+.interval {
+  text-align: right;
+}
+
+/*確率*/
+.probability {
+  text-align: right;
+}
+
+/*期間*/
+.period {
+  text-align: right;
+}
+
+/*効果*/
+.effect {
+  text-align: left;
+}
+
+/*期待値*/
+.expected_value {
+  text-align: left;
+}
+
+.odd_row {
+  background-color: white;
+}
+
+.even_row {
+  background-color: ghostwhite;
+}
+
+/*ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 1025px) {
+  /*ヘッダタイトル*/
+  #tool_title {
+    font-size: 20px;
+  }
+
+  #search_condition input,
+  #search_condition select {
+      font-size: 16px;
+  }
+
+  #effect_condition {
+    width: 200px;
+  }
+
+  /*一覧 間隔*/
+  #skill_list .interval {
+    width: 36px;
+  }
+  /*一覧 確率*/
+  #skill_list .probability {
+    width: 40px;
+  }
+  /*一覧 期間*/
+  #skill_list .period {
+    width: 52.5px;
+  }
+  /*一覧 効果*/
+  #skill_list .effect {
+    width: auto;
+  }
+  /*一覧 期待値*/
+  #skill_list .expected_value {
+    width: 49px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /*ウィンドウ幅が最大767pxまでの場合に適用 タブレット*/
+  /*ヘッダタイトル*/
+  #tool_title {
+    font-size: 20px;
+  }
+
+  #search_condition input,
+  #search_condition select {
+      font-size: 16px;
+  }
+
+  #effect_condition {
+    width: 200px;
+  }
+
+  /*一覧 間隔*/
+  #skill_list .interval {
+    width: 36px;
+  }
+  /*一覧 確率*/
+  #skill_list .probability {
+    width: 40px;
+  }
+  /*一覧 期間*/
+  #skill_list .period {
+    width: 52.5px;
+  }
+  /*一覧 効果*/
+  #skill_list .effect {
+    width: auto;
+  }
+  /*一覧 期待値*/
+  #skill_list .expected_value {
+    width: 49px;
+  }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
+@media screen and (max-width: 599px) {
+  /*ヘッダタイトル*/
+  #tool_title {
+    font-size: 15px;
+  }
+
+  /*検索条件*/
+  #search_condition input,
+  #search_condition select,
+  #search_condition label
+  {
+      font-size: 14px;
+  }
+
+  /*検索条件 効果ラベル2*/
+  #effect_lbl2 {
+    display: block;
+  }
+
+  #effect_condition {
+    width: 200px;
+  }
+
+  #skill_list th,
+  #skill_list td
+  {
+    font-size: 12px;
+  }
+
+  /*一覧 間隔*/
+  #skill_list .interval {
+    width: 30px;
+  }
+  /*一覧 確率*/
+  #skill_list .probability {
+    width: 32px;
+  }
+  /*一覧 期間*/
+  #skill_list .period {
+    width: 42px;
+  }
+  /*一覧 効果*/
+  #skill_list .effect {
+    width: auto;
+  }
+  /*一覧 期待値*/
+  #skill_list .expected_value {
+    width: 28px;
+  }
+}
